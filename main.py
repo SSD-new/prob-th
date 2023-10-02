@@ -1,1 +1,2 @@
-a = 23
+a = input()
+print(a)
