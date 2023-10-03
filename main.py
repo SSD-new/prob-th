@@ -7,7 +7,7 @@ while True:
 
     n = int(input('\nВвидите кол-во кубиков:\n'))
 
-    if int(np.cbrt(n)) == float(np.cbrt(n)):
+    if int(np.cbrt(n)) == float(np.cbrt(n)) and n != 1:
 
         v = 8 / n
         b = ((np.cbrt(n) - 2) * 12) / n
@@ -19,4 +19,4 @@ while True:
             str(round((v * 100), 3)) + '%;')
 
     else:
-        print('вы ввели неверное значение')
+        print('ОШИБКА:Из ' + str(n) + ' кубиков нельзя составить один куб\n' + 'Введите другое значение')
